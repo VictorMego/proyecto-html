@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<head>
+    <title>Elementos de linea</title>
+    <style>
+        .parrafo-1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- class = sirve para dar estilos a travez de css
+        id = es un identificardor unico que se utiliza para seleccionar el elemento dede JS y para hacer navegacion a travez de anclas
+        title = es un atributo que ayuda a la accsebilidad mostrando una descripcion del elemento al que pertenece. aparece el mensaje en un tooltip
+        data-* = es un atributo que nos permite guardar algun valor en la etiqueta HTML
+    -->
+<p class="parrafo-1">clases</p>
+<p id="parrafo">indentificador a travez de un id</p>
+<p title="este es un ejemplo del atributo title">titulo con tooltip</p>
+<p id="parrafo2" data-ejemplo="datos de ejemplo">datos pasados en la etiqueta</p>
+<p id="parrafo5" data-ejemplo="ojala salga">ventas</p>
+<script>
+    const p =document.getElementById('parrafo')
+    console.log(p.textContent)
+    const parrafo2 = document.getElementById('parrafo2')
+    console.log(parrafo2.dataset.ejemplo)
+    const parrafo5 = document.getElementById('parrafo5')
+    console.log(parrafo5.dataset.ejemplo)
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
